@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>한자랑 개인정보처리방침</title>
+<title>한자랑 — 한자를 외우지 마세요, 발견하게 하세요</title>
+<meta name="description" content="아이가 이미 아는 단어 속에서 한자를 발견하는 미취학 아동용 한자 학습 앱. 광고 없음, 개인정보 수집 없음, 오프라인 동작.">
 <style>
   :root {
     --cream: #FFF6E9;
+    --blue: #BFE3F2;
+    --green: #CDEAC0;
+    --orange: #FFD9A0;
     --ink: #4A4039;
     --ink-soft: #8C7E72;
     --highlight: #FF8A4C;
-    --card: #FFFFFF;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -20,138 +23,78 @@
     line-height: 1.7;
     padding: 24px 16px 60px;
   }
-  .wrap { max-width: 720px; margin: 0 auto; }
-  header { text-align: center; padding: 24px 0 8px; }
-  header .hanja { font-size: 56px; font-weight: 900; line-height: 1; }
-  h1 { font-size: 26px; font-weight: 900; margin: 12px 0 4px; }
-  .date { color: var(--ink-soft); font-size: 14px; margin-bottom: 24px; }
-  .card {
-    background: var(--card);
-    border-radius: 20px;
-    padding: 24px 22px;
-    margin: 14px 0;
+  .wrap { max-width: 720px; margin: 0 auto; text-align: center; }
+  .hanja { font-size: 88px; font-weight: 900; line-height: 1.1; margin-top: 28px; }
+  h1 { font-size: 34px; font-weight: 900; margin: 8px 0 6px; }
+  .tagline { font-size: 17px; color: var(--ink-soft); margin-bottom: 28px; }
+  .connect {
+    background: #fff;
+    border-radius: 24px;
+    padding: 22px;
+    margin: 0 auto 28px;
+    max-width: 480px;
+    font-size: 22px;
+    font-weight: 800;
   }
-  .card h2 { font-size: 18px; font-weight: 800; margin-bottom: 10px; }
-  .card h2 .no { color: var(--highlight); margin-right: 6px; }
-  .card p, .card li { font-size: 15px; }
-  .card ul { padding-left: 20px; margin-top: 6px; }
-  .big {
+  .connect .hl { color: var(--highlight); font-weight: 900; }
+  .connect .arrow { color: var(--ink-soft); font-size: 15px; font-weight: 400; display: block; margin-top: 4px; }
+  .cards { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 32px; }
+  .card {
+    border-radius: 20px;
+    padding: 16px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    flex: 1 1 200px;
+    max-width: 230px;
+  }
+  .c1 { background: var(--blue); }
+  .c2 { background: var(--green); }
+  .c3 { background: var(--orange); }
+  .store {
+    display: inline-block;
     background: var(--highlight);
     color: #fff;
-    text-align: center;
     font-weight: 800;
     font-size: 17px;
-    border-radius: 20px;
-    padding: 18px 20px;
-    margin: 20px 0;
+    border-radius: 28px;
+    padding: 14px 32px;
+    text-decoration: none;
+    margin-bottom: 10px;
   }
-  .en { color: var(--ink-soft); font-size: 13.5px; }
-  .en h2 { font-size: 15px; }
-  footer { text-align: center; color: var(--ink-soft); font-size: 13px; margin-top: 32px; }
-  a { color: var(--highlight); }
+  .store-note { font-size: 13px; color: var(--ink-soft); margin-bottom: 40px; }
+  footer { font-size: 13.5px; color: var(--ink-soft); }
+  footer a { color: var(--highlight); text-decoration: none; }
+  footer .links { margin-bottom: 6px; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header>
-    <div class="hanja">水</div>
-    <h1>한자랑 개인정보처리방침</h1>
-    <p class="date">시행일: 2026년 8월 2일</p>
-  </header>
+  <div class="hanja">水</div>
+  <h1>한자랑</h1>
+  <p class="tagline">한자를 외우지 마세요, 발견하게 하세요</p>
 
-  <div class="big">한자랑은 어떤 개인정보도 수집하지 않습니다.</div>
-
-  <div class="card">
-    <h2><span class="no">1.</span>개요</h2>
-    <p>
-      한자랑(이하 "앱")은 SdongWorks가 개발·배포하는 미취학 아동용 한자 학습
-      앱입니다. 본 방침은 앱이 이용자(어린이 및 보호자)의 정보를 어떻게
-      다루는지 설명합니다.
-    </p>
+  <div class="connect">
+    <span class="hl">수</span>영 · <span class="hl">수</span>박 · <span class="hl">수</span>요일
+    <span class="arrow">아이가 아는 단어 속에 이미 한자가 숨어 있어요</span>
   </div>
 
-  <div class="card">
-    <h2><span class="no">2.</span>수집하는 개인정보: 없음</h2>
-    <ul>
-      <li>회원가입·로그인이 없으며 이름, 이메일, 전화번호 등 어떤 개인정보도 수집하지 않습니다.</li>
-      <li>위치 정보, 연락처, 사진, 마이크 등 기기 권한을 요청하지 않습니다.</li>
-      <li>광고가 없으며, 광고 SDK·분석(트래킹) SDK를 포함하지 않습니다.</li>
-      <li>모든 학습 콘텐츠는 앱 안에 포함되어 있어 인터넷 연결 없이 동작합니다.</li>
-      <li>어떤 데이터도 외부 서버로 전송하지 않습니다.</li>
-    </ul>
+  <div class="cards">
+    <div class="card c1">🔊 탭하면 들려요<br>한글 몰라도 OK</div>
+    <div class="card c2">✏️ 손가락 따라쓰기<br>🃏 플래시카드 복습</div>
+    <div class="card c3">🚫 광고 없음<br>📴 오프라인 동작</div>
   </div>
 
-  <div class="card">
-    <h2><span class="no">3.</span>기기에만 저장되는 정보</h2>
-    <p>
-      아래 정보는 이용자의 기기 내부에만 저장되며, 개발자를 포함한 누구에게도
-      전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.
-    </p>
-    <ul>
-      <li>프리미엄 구매 여부(잠금 해제 상태)</li>
-    </ul>
-  </div>
+  <a class="store" href="https://play.google.com/store/apps/details?id=com.sdongworks.hanjarang">Google Play에서 다운로드</a>
+  <p class="store-note">5~7세 미취학 아동 · 요일과 숫자 17자 무료</p>
 
-  <div class="card">
-    <h2><span class="no">4.</span>인앱 결제</h2>
-    <p>
-      전체 한자 잠금 해제(일회성 구매)는 Google Play 결제 시스템을 통해
-      처리됩니다. 결제 과정에서 카드 정보 등 결제 수단 정보는 Google이
-      처리하며, 앱은 여기에 접근할 수 없습니다. 결제와 관련한 Google의
-      개인정보 처리는
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을
-      따릅니다. 앱 내 구매 화면은 보호자 확인(부모 게이트)을 거쳐야만 접근할
-      수 있습니다.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2><span class="no">5.</span>아동의 개인정보 보호</h2>
-    <p>
-      한자랑은 만 13세 미만 아동을 주 이용자로 하는 앱으로, 아동을 포함한
-      어떤 이용자의 개인정보도 수집·이용·제공하지 않습니다. 이는 Google Play
-      가족 정책 및 관련 아동 개인정보 보호 법령(COPPA 등)의 취지를 따릅니다.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2><span class="no">6.</span>방침의 변경</h2>
-    <p>
-      본 방침이 변경되는 경우 이 페이지를 통해 갱신하여 고지합니다. 중요한
-      변경(개인정보 수집을 시작하는 등)이 있는 경우 앱 업데이트 노트에도
-      안내합니다.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2><span class="no">7.</span>문의</h2>
-    <p>
-      개인정보 관련 문의는 아래 이메일로 연락해 주세요.<br>
-      개발자: SdongWorks<br>
-      이메일: <a href="mailto:hancoding@gmail.com">hancoding@gmail.com</a>
-    </p>
-  </div>
-
-  <div class="card en">
-    <h2>Privacy Policy (English Summary)</h2>
-    <p>
-      HanjaRang ("한자랑", com.sdongworks.hanjarang) is a Hanja learning app
-      for preschool children developed by SdongWorks.
-      The app collects <strong>no personal information</strong> of any kind:
-      no accounts, no analytics, no ads, no tracking SDKs, and no device
-      permissions. All content is bundled and works fully offline; no data is
-      transmitted to any server. The only stored value is the premium unlock
-      state, kept locally on the device and deleted with the app.
-      One-time in-app purchase is processed entirely by Google Play Billing
-      behind a parental gate; the app never accesses payment details.
-      This app is directed at children under 13 and complies with the
-      Google Play Families policy and COPPA principles.
-      Contact: hancoding@gmail.com
-    </p>
-  </div>
-
-  <footer>© 2026 SdongWorks · 한자랑 (HanjaRang)</footer>
+  <footer>
+    <div class="links">
+      <a href="privacy.html">개인정보처리방침</a> ·
+      <a href="mailto:hancoding@gmail.com">문의하기</a>
+    </div>
+    © 2026 SdongWorks · 한자랑 (HanjaRang)
+  </footer>
 
 </div>
 </body>
